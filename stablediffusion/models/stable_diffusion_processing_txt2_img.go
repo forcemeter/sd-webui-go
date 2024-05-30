@@ -128,6 +128,9 @@ type StableDiffusionProcessingTxt2Img struct {
 	// Sampler Name
 	SamplerName string `json:"sampler_name,omitempty"`
 
+	// scheduler, new in v1.9.3
+	Scheduler string `json:"scheduler"`
+
 	// Save Images
 	SaveImages *bool `json:"save_images,omitempty"`
 
@@ -166,6 +169,9 @@ type StableDiffusionProcessingTxt2Img struct {
 
 	// Width
 	Width *int64 `json:"width,omitempty"`
+
+	// Task remark, Meaningless
+	TaskInfo interface{} `json:"task_info,omitempty"`
 }
 
 // Validate validates this stable diffusion processing txt2 img

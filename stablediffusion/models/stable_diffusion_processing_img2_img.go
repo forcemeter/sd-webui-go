@@ -172,6 +172,9 @@ type StableDiffusionProcessingImg2Img struct {
 
 	// Width
 	Width *int64 `json:"width,omitempty"`
+
+	// Task remark, Meaningless
+	TaskInfo interface{} `json:"task_info,omitempty"`
 }
 
 // Validate validates this stable diffusion processing img2 img
