@@ -134,6 +134,9 @@ type StableDiffusionProcessingImg2Img struct {
 	// Sampler Name
 	SamplerName string `json:"sampler_name,omitempty"`
 
+	// scheduler, new in v1.9.3
+	Scheduler string `json:"scheduler"`
+
 	// Save Images
 	SaveImages *bool `json:"save_images,omitempty"`
 
